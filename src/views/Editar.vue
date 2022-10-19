@@ -1,6 +1,6 @@
 <template>
-  <form @submit.prevent="updateTarefa(tarea)">
-    <Input :tarea="tarea" />
+  <form @submit.prevent="updateTarefa(tarefa)">
+    <Input :tarefa="tarefa" />
   </form>
 </template>
 
@@ -12,10 +12,10 @@ export default {
     Input,
   },
   computed: {
-    ...mapState(["tarea"]),
+    ...mapState(["tarefa"]),
   },
   methods: {
-    ...mapActions(["setTarefas", "updateTarea"]),
+    ...mapActions(["setTarefas", "updateTarefa"]),
   },
   created() {
     this.setTarefas(this.$route.params.id);

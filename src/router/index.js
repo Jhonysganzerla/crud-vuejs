@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 
+//Arquivo de rotas
 const routes = [{
   path: '/',
   name: 'Home',
@@ -9,20 +10,14 @@ const routes = [{
 {
   path: '/about',
   name: 'About',
-  // route level code-splitting
-  // this generates a separate chunk (about.[hash].js) for this route
-  // which is lazy-loaded when the route is visited.
   component: () =>
-    import(/* webpackChunkName: "about" */ '../views/About.vue')
+    import( '../views/About.vue')
 },
 {
   path: '/editar/:id',
   name: 'Editar',
-  // route level code-splitting
-  // this generates a separate chunk (about.[hash].js) for this route
-  // which is lazy-loaded when the route is visited.
   component: () =>
-    import(/* webpackChunkName: "about" */ '../views/Editar.vue')
+    import( '../views/Editar.vue')
 }
 ];
 

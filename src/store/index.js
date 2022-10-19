@@ -1,5 +1,8 @@
 import { createStore } from 'vuex'
 import router from '../router/index'
+
+//Database migue 
+
 export default createStore({
   state: {
     tarefas: [],
